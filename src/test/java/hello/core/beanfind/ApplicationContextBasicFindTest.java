@@ -28,6 +28,7 @@ public class ApplicationContextBasicFindTest {
         Assertions.assertThat(memberService).isInstanceOf(MemberServiceImpl.class);
     }
 
+    // 이렇게도 가능하다.!!!!!!!!!!!!!!!!!!!!
     @Test
     @DisplayName("이름 없이 타입으로만 조회")
     void findBeanByType() {
