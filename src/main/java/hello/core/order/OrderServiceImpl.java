@@ -25,7 +25,15 @@ public class OrderServiceImpl implements OrderService{
 
         int discountPrice = discountPolicy.discount(member, itemPrice);
 
-        // // 멤버하고, 할인정책이 다 끝났을때, 만들어지는 객체 돌아갈때 부분.
+        // 멤버하고, 할인정책이 다 끝났을때, 만들어지는 객체 돌아갈때 부분.
         return new Order(memberId, itemName, itemPrice, discountPrice);
     }
+
+
+   //테스트 용도도
+   public MemberRepository getMemberRepository() {
+        return memberRepository;
+    }
+
+
 }
