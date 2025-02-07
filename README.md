@@ -6,6 +6,7 @@ LimboDB Java 바인딩을 활용하여 데이터베이스와 상호 작용하는
 
 JDBC 기반의 기본 기능과 네이티브 코드(JNI) 기반 데이터베이스 사용법을 익히는 것이 목표한다.
 
+---
 
 ## 📌 목표
 
@@ -17,6 +18,7 @@ JDBC 기반의 기본 기능과 네이티브 코드(JNI) 기반 데이터베이�
 - 트랜잭션`(commit, rollback)`과 SQL 예외 처리 경험
 - `네이티브 코드(JNI)`와 `JDBC 드라이버`의 동작 방식 익히기
 
+---
 
 ## 📝 프로젝트 개요: "LimboDB를 활용한 간단한 회원 관리 시스템"
 
@@ -31,12 +33,17 @@ JDBC 기반의 기본 기능과 네이티브 코드(JNI) 기반 데이터베이�
 - 파일 기반 데이터베이스: members.db라는 파일을 사용하여 데이터 저장
 - SQL 사용: `CREATE TABLE`, `INSERT`, `SELECT`, `UPDATE`, `DELETE` 실행
 
+---
 
-<br/>
 
 ## 시운전
 
-![core.mp4](https://user-images.githubusercontent.com/xxxxx/yyyyy.mp4)
+
+
+https://github.com/user-attachments/assets/a642f329-2e8b-4e7f-ab81-6bbeb7d65213
+
+
+
 
 
 ## 1️⃣ 프로젝트 기능 목록
@@ -57,7 +64,7 @@ JDBC 기반의 기본 기능과 네이티브 코드(JNI) 기반 데이터베이�
 | 기술               | 설명 |
 |------------------|------------------------------------------------|
 | Java 17         | 최신 Java 문법을 활용하여 구현 |
-| Gradle / Maven  | 프로젝트 빌드 및 의존성 관리 |
+| Gradle          | 프로젝트 빌드                |
 | LimboDB (JDBC 사용) | `LimboConnection`, `LimboStatement`, `LimboResultSet` 사용 |
 | 파일 기반 DB 사용 | `members.db` 생성하여 데이터 저장 |
 | SQL 활용        | `CREATE TABLE`, `INSERT`, `SELECT`, `UPDATE`, `DELETE` 활용 |
