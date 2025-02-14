@@ -11,7 +11,7 @@ public class MemberRepository {
         try (Connection conn = LimboDatabaseManager.connect();
              Statement stmt = conn.createStatement()) {
             stmt.execute(sql);
-            System.out.println("✅ members 테이블 생성 완료");
+            System.out.println("members 테이블 생성 완료 (LimboDB)");
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -24,7 +24,7 @@ public class MemberRepository {
             pstmt.setString(1, name);
             pstmt.setString(2, email);
             pstmt.executeUpdate();
-            System.out.println("✅ 회원 추가: " + name);
+            System.out.println("회원 추가 완료: " + name);
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -69,7 +69,7 @@ public class MemberRepository {
             pstmt.setInt(3, id);
             int affectedRows = pstmt.executeUpdate();
             if (affectedRows > 0) {
-                System.out.println("✅ 회원 수정 완료: ID = " + id);
+                System.out.println("회원 수정 완료: ID = " + id);
             } else {
                 System.out.println("수정 실패: ID=" + id + " 없음");
             }
